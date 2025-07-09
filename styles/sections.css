@@ -23,6 +23,10 @@
     h2 {
         font: var(--subtitle);
         color: var(--gray-200);
+
+        .highlight {
+            color: var(--red);
+        }
     }
 
     h1 {
