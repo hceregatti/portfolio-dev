@@ -242,27 +242,30 @@
     }
 }
 
-.contact-itens {
+.cards-contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     margin-bottom: 200px;
 }
 
-.item {
+.contact-item {
     display: flex;
-    max-width: 400px;
-    border: 1.5px solid transparent;
-    border-radius: 8px; 
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    width: 400px;
     padding: 20px;
-    background-color: var(--gray-400);
+    background-color: var(--gray-600);
+    text-decoration: none;
+    cursor: pointer;
 
     &>span {
         display: flex;
-        align-items: center;
         gap: 12px;
+        align-items: center;
 
         img {
             width: 24px;
@@ -271,31 +274,35 @@
 
         p {
             font: var(--text-md);
-            font-weight: 400;
-            color: var(--gray-200);
+            font-weight: 500;
+            color: var(--gray-300);
         }
     }
 
-    div>img {
-        width: 20px;
+    &>div {
+        img {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
-.item:hover {
-    border: 1.5px solid var(--blue);
+.contact-item:hover {
+    border: 2px solid var(--blue);
+    transition: all 0.2s ease-in;
 
-    .img-linkedin {
-        content: url(/assets/icons/linkedin-hover.svg);
+    &>span {
+        .logo-linkedin-hover {
+            content: url(/assets/icons/linkedin-hover.svg);
+        }
+        .logo-instagram-hover{
+            content: url(/assets/icons/instagram-hover.svg);
+        }
+        .logo-github-hover {
+            content: url(/assets/icons/github-hover.svg);
+        }
+        .logo-email-hover{
+            content: url(/assets/icons/email-hover.svg);
+        }
     }
-    .img-instagram {
-        content: url(/assets/icons/instagram-hover.svg);
-    }
-    .img-github {
-        content: url(/assets/icons/github-hover.svg);
-    }
-    .img-email {
-        content: url(/assets/icons/email-hover.svg);
-    }
-
-    transition: all 0.2s linear;
 }
