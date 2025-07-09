@@ -258,7 +258,7 @@
     border-radius: 8px;
     width: 400px;
     padding: 20px;
-    background-color: var(--gray-600);
+    background-color: var(--gray-400);
     text-decoration: none;
     cursor: pointer;
 
@@ -275,7 +275,7 @@
         p {
             font: var(--text-md);
             font-weight: 500;
-            color: var(--gray-300);
+            color: var(--gray-200);
         }
     }
 
